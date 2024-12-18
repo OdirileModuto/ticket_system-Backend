@@ -1,0 +1,61 @@
+2024-12-18 11:34:45,869 - ERROR - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "Ticket System" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-18 11:38:55,778 - ERROR - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "TicketSystem" does not exist
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-18 11:41:18,861 - INFO - Database tables created successfully!
+2024-12-18 11:41:18,907 - ERROR - Error during database operations: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 1: INSERT INTO users (id, username, user_type, email, password,...
+                    ^
+
+[SQL: INSERT INTO users (id, username, user_type, email, password, role) VALUES (%(id)s::UUID, %(username)s, %(user_type)s, %(email)s, %(password)s, %(role)s)]
+[parameters: {'id': UUID('e99f1e24-c155-4837-9c29-1b92a0942ceb'), 'username': 'john_doe', 'user_type': 'admin', 'email': 'john.doe@example.com', 'password': 'securepass123', 'role': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-18 13:51:11,953 - INFO - Database tables created successfully!
+2024-12-18 13:51:11,973 - ERROR - Error during database operations: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 1: INSERT INTO users (id, username, user_type, email, password,...
+                    ^
+
+[SQL: INSERT INTO users (id, username, user_type, email, password, role) VALUES (%(id)s::UUID, %(username)s, %(user_type)s, %(email)s, %(password)s, %(role)s)]
+[parameters: {'id': UUID('5dd71482-14f2-4013-b214-ca2827fbb0c3'), 'username': 'john_doe', 'user_type': 'admin', 'email': 'john.doe@example.com', 'password': 'securepass123', 'role': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-18 13:53:15,649 - INFO - Database tables created successfully!
+2024-12-18 13:53:15,662 - ERROR - Error during database operations: relationship 'creator' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2024-12-18 13:55:34,775 - INFO - Database tables created successfully!
+2024-12-18 13:55:34,782 - ERROR - Error during database operations: Mapper 'Mapper[Ticket(tickets)]' has no property 'users_id'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2024-12-18 13:55:56,899 - INFO - Database tables created successfully!
+2024-12-18 13:55:56,909 - ERROR - Error during database operations: back_populates on relationship 'User.tickets_created' refers to attribute 'Ticket.user_id' that is not a relationship.  The back_populates parameter should refer to the name of a relationship on the target class.
+2024-12-18 14:01:31,163 - INFO - Database tables created successfully!
+2024-12-18 14:01:31,163 - ERROR - Error during database operations: Mapper 'Mapper[Ticket(tickets)]' has no property 'user'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2024-12-18 14:01:56,574 - INFO - Database tables created successfully!
+2024-12-18 14:01:56,584 - ERROR - Error during database operations: Class <class '__main__.Ticket'> does not have a mapped column named 'users_id'
+2024-12-18 14:02:12,116 - INFO - Database tables created successfully!
+2024-12-18 14:02:12,116 - ERROR - Error during database operations: Mapper 'Mapper[Ticket(tickets)]' has no property 'users'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2024-12-18 14:02:25,176 - INFO - Database tables created successfully!
+2024-12-18 14:02:25,191 - ERROR - Error during database operations: Mapper 'Mapper[Ticket(tickets)]' has no property 'user'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2024-12-18 14:03:18,272 - INFO - Database tables created successfully!
+2024-12-18 14:03:18,290 - ERROR - Error during database operations: Could not determine join condition between parent/child tables on relationship User.tickets_created - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-12-18 14:04:21,571 - INFO - Database tables created successfully!
+2024-12-18 14:04:21,583 - ERROR - Error during database operations: Could not determine join condition between parent/child tables on relationship User.tickets_created - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-12-18 15:01:24,067 - INFO - Database tables created successfully!
+2024-12-18 15:01:24,082 - ERROR - Error during database operations: Could not determine join condition between parent/child tables on relationship User.tickets_created - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2024-12-18 15:03:17,554 - INFO - Database tables created successfully!
+2024-12-18 15:03:17,569 - ERROR - Error during database operations: Mapper 'Mapper[Ticket(tickets)]' has no property 'files'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2024-12-18 15:05:51,491 - INFO - Database tables created successfully!
+2024-12-18 15:05:51,529 - ERROR - Error during database operations: (psycopg2.errors.UndefinedTable) relation "users" does not exist
+LINE 1: INSERT INTO users (id, username, user_type, email, password,...
+                    ^
+
+[SQL: INSERT INTO users (id, username, user_type, email, password, role) VALUES (%(id)s::UUID, %(username)s, %(user_type)s, %(email)s, %(password)s, %(role)s)]
+[parameters: {'id': UUID('cb2cfc0b-170a-4965-84c8-689312c217e2'), 'username': 'john_doe', 'user_type': 'admin', 'email': 'john.doe@example.com', 'password': 'securepass123', 'role': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-18 15:14:01,814 - INFO - Database tables created successfully!
+2024-12-18 15:14:01,831 - INFO - New user created: john_doe
+2024-12-18 15:14:01,862 - INFO - New ticket created: TICK001
+2024-12-18 15:14:01,869 - INFO - New subject created: Login Issue
+2024-12-18 15:14:01,874 - INFO - Subject linked to ticket: TICK001
+2024-12-18 15:14:01,880 - INFO - File attached to ticket: screenshot.png
+2024-12-18 15:14:01,887 - INFO - Subject: Login Issue
+2024-12-18 15:14:01,889 - INFO - File: screenshot.png, Path: /path/to/screenshot.png
+2024-12-18 15:14:01,890 - INFO - Data inserted and linked successfully!
