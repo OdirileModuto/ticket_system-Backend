@@ -59,3 +59,10 @@ LINE 1: INSERT INTO users (id, username, user_type, email, password,...
 2024-12-18 15:14:01,887 - INFO - Subject: Login Issue
 2024-12-18 15:14:01,889 - INFO - File: screenshot.png, Path: /path/to/screenshot.png
 2024-12-18 15:14:01,890 - INFO - Data inserted and linked successfully!
+2024-12-18 15:27:07,698 - INFO - Database tables created successfully!
+2024-12-18 15:27:07,752 - ERROR - Error during database operations: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+DETAIL:  Key (email)=(john.doe@example.com) already exists.
+
+[SQL: INSERT INTO users (id, username, user_type, email, password, role) VALUES (%(id)s::UUID, %(username)s, %(user_type)s, %(email)s, %(password)s, %(role)s)]
+[parameters: {'id': UUID('425c62ac-4037-477d-ac50-750c38d5fcff'), 'username': 'john_doe', 'user_type': 'admin', 'email': 'john.doe@example.com', 'password': 'securepass123', 'role': 'admin'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
