@@ -124,11 +124,11 @@ def main():
     try:
         # Create a new user
         new_user = User(
-            username="john_doe",
+            username="odirile.moduto",
             user_type="admin",
-            email="john.doe@example.com",
+            email="odirile.moduto@cdasolutions.co.za",
             password="securepass123",
-            role="admin"  # Added role field
+            role="user"  # Added role field
         )
         session.add(new_user)
         session.commit()
@@ -136,7 +136,7 @@ def main():
 
         # Create a new ticket
         new_ticket = Ticket(
-            ticket_number="TICK001",
+            ticket_number="TICK002",
             title="System Access Issue",  # Added title field
             description="User unable to access system",
             priority="High",
